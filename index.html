@@ -3,102 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Link to PDF — Browser Extension</title>
+    <title>Link to PDF — Installed</title>
     <link rel="icon" href="128x128.png" sizes="128x128">
     <link rel="icon" type="image/png" href="128x128.png">
     <style>
-      :root {
-        --text: #0f172a;
-        --muted: #475569;
-        --primary: #3B8EEB;
-        --card: rgba(255,255,255,0.86);
-      }
-
       * { box-sizing: border-box; }
       html, body { height: 100%; }
       body {
         margin: 0;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-        background: linear-gradient(180deg, #FFFFFF 0%, #3B8EEB 100%);
-        color: var(--text);
+        background: #f5f6f8;
+        color: #0f172a;
       }
 
-      .page {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 56px 20px 80px;
       }
 
-      /* Toolbar removed */
-
-      header {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding: 18px 24px 0;
+      h1 {
+        margin: 0 0 12px 0;
+        font-size: clamp(32px, 5.6vw, 56px);
+        line-height: 1.1;
+        text-align: center;
+        font-weight: 800;
       }
-      .logo {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
-        object-fit: cover;
-        display: block;
-      }
-      .brand {
-        font-size: 18px;
-        font-weight: 700;
-      }
-
-      .hero {
-        padding: 40px 24px 64px;
-        display: grid;
-        gap: 16px;
-        place-items: center;
+      p.lead {
+        margin: 0 auto 36px auto;
+        max-width: 900px;
+        color: #475569;
+        font-size: clamp(16px, 2.2vw, 22px);
         text-align: center;
       }
-      h1 {
-        margin: 0;
-        font-size: clamp(28px, 6vw, 56px);
-        line-height: 1.1;
-        letter-spacing: -0.02em;
+      .frame {
+        display: block;
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto 56px auto;
+        border-radius: 16px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(15,23,42,0.08);
       }
-      .sub {
-        margin: 0;
-        color: var(--muted);
-        font-size: clamp(14px, 2.4vw, 22px);
-      }
-      .cta-row { display: flex; gap: 12px; margin-top: 8px; }
-      .cta-row { justify-content: center; }
-      .hl { color: var(--primary); font-weight: 800; }
-      .btn {
-        padding: 12px 16px;
-        border-radius: 10px;
-        border: 1px solid rgba(15,23,42,0.08);
-        background: rgba(255,255,255,0.8);
-        color: var(--text);
-        cursor: default;
-        font-weight: 600;
-      }
-      .btn.primary { background: var(--primary); color: white; border-color: transparent; }
 
-      @media (min-width: 960px) {
-        .hero { padding: 56px 56px 96px; }
-        header { padding: 24px 56px 0; }
+      .section-title {
+        margin: 56px 0 16px;
+        text-align: center;
+        font-size: clamp(18px, 2.2vw, 24px);
+        color: #0f172a;
+        font-weight: 600;
       }
     </style>
   </head>
   <body>
-    <div class="page">
-      <header>
-        <img class="logo" src="128x128.png" alt="Link to PDF logo" width="40" height="40">
-        <div class="brand">Link to PDF</div>
-      </header>
+    <main class="container">
+      <h1>Link to PDF Installed</h1>
+      <p class="lead">Click the puzzle piece (1) in the top right of your browser. Then, click the little pin (2) next to the extension:</p>
+      <img class="frame" src="Frame 6.png" alt="Pin the extension in Chrome (steps 1 and 2)">
 
-      <section class="hero">
-        <h1>Turn <span class="hl">web pages</span> into <span class="hl">PDFs</span> in seconds</h1>
-        <p class="sub">Save any web page as a PDF with one click—right from your toolbar.</p>
-      </section>
-    </div>
+      <div class="section-title">Open the extension (3) on any page to start using Link to PDF:</div>
+      <img class="frame" src="Frame 7.png" alt="Open the pinned extension (step 3)">
+    </main>
   </body>
 </html>
 
